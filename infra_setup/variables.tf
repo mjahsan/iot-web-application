@@ -16,5 +16,10 @@ variable "vpc_cidr" {
 variable "eks_name" {
   type        = string
   description = "EKS cluster name" 
-  default     = "landfill-production-cluster"
+  default     = "landfill-development-cluster"
+}
+variable "db_password" {
+  type        = string
+  description = "Enviornment" 
+  default     = "Password123"
 }
